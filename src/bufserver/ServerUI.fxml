@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="serverBack" maxHeight="-Infinity" maxWidth="-Infinity" 
+            minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" 
+            styleClass="serverBack" stylesheets="@ServerFormater.css" xmlns="http://javafx.com/javafx/8.0.171" 
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="bufserver.ServerUIController">
+    <AnchorPane layoutX="383.0" layoutY="50.0" prefHeight="311.0" prefWidth="285.0" styleClass="rotatorBack" 
+                stylesheets="@ServerFormater.css">
+        <children>
+            <FontAwesomeIconView fill="WHITE" glyphName="SERVER" layoutX="33.0" layoutY="299.0" size="40" />
+            <Label alignment="CENTER" layoutX="33.0" layoutY="265.0" prefHeight="35.0" prefWidth="219.0" text="Database Server Running" textFill="WHITE">
+            <padding>
+               <Insets left="10.0" />
+            </padding></Label>
+            <ImageView fx:id="serverImage" fitHeight="150.0" fitWidth="200.0" layoutX="68.0" layoutY="55.0" 
+                       pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../Images/rota.png" />
+            </image></ImageView>
+        </children>
+    </AnchorPane>
+    
+    <Label layoutX="22.0" layoutY="224.0" prefHeight="35.0" prefWidth="232.0" text="Welcome to Buffet" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="271.0" prefHeight="17.0" prefWidth="307.0" text="Order Simply, Get Quickly" textFill="WHITE" />
+     <Label alignment="CENTER" layoutX="56.0" layoutY="369.0" prefHeight="17.0" prefWidth="268.0" text="©2019 Buffet Incorporated" textFill="WHITE" />
+   <ImageView fitHeight="171.0" fitWidth="162.0" layoutX="22.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../Images/w-500.png" />
+      </image>
+   </ImageView>
+   <ImageView fitHeight="23.0" fitWidth="22.0" layoutX="657.0" layoutY="14.0" onMouseClicked="#close" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../Images/close.png" />
+      </image>
+   </ImageView>
+
+    
+</AnchorPane>
